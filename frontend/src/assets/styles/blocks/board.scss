@@ -1,0 +1,174 @@
+.board__section {
+  background-color: rgb(75, 191, 107);
+}
+
+.header__board {
+  padding: 8px 4px 4px 8px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+}
+
+.main__content--board {
+  width: 100%;
+  height: calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
+  position: relative;
+}
+
+.header__board-item {
+  background-color: hsla(0, 0%, 100%, .24);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 0 12px;
+
+  border-radius: 3px;
+  color: #fff;
+  height: 32px;
+}
+
+.vertical__line {
+  border-left: 1px solid hsla(0, 0%, 100%, .24);
+  height: 16px;
+  margin: 8px 8px 12px 6px;
+}
+
+.header__board-team {
+  border-radius: 3px;
+  color: #fff;
+  cursor: default;
+  font-size: 14px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 4px 4px 0;
+  background-color: hsla(0, 0%, 100%, .24);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__board--members {
+  display: flex;
+  align-items: center;
+}
+
+.board__avatar {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+
+.admin__symbol {
+  background: url("/img/chevron.88a4454280d68a816b89.png");
+  background-size: 100%;
+  top: 0;
+  height: 9px;
+  position: absolute;
+  right: 1px;
+  width: 9px;
+  z-index: 3;
+}
+
+
+.admin {
+  position: relative;
+}
+
+.header__board--popup {
+  position: absolute;
+  background: #fff;
+  border-radius: 3px;
+  width: 304px;
+  top: 88px;
+  left: -306px;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(128, 128, 128, 0.8);
+  padding: 0 12px 12px;
+
+  transition: left 0.3s linear;
+}
+
+.popup__active {
+  left: 0;
+}
+
+.header__board--title {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+
+  position: relative;
+}
+
+.header__popup--info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  margin-left: 10px;
+}
+
+
+.board__avatar--popup {
+  height: 45px;
+  width: 50px;
+  border-radius: 50%;
+  background: #dfe1e6;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  outline: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.header__popup--content {
+  padding: 0 12px;
+}
+
+.header__popup--a {
+  padding: 6px 12px;
+  position: relative;
+  margin: 0 -12px;
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.symbol__close--popup {
+  position: absolute;
+  top: 10px;
+  right: -1px;
+  width: 12px;
+  height: 12px;
+  fill: #091e42;
+
+  cursor: pointer;
+}
+
+.header__board--right {
+  display: flex;
+}
+
+.header__board--menu {
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}

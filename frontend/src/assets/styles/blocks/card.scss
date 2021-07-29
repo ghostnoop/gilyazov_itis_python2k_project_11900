@@ -1,0 +1,194 @@
+.card-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  max-width: 24%;
+  flex: 0 0 24%;
+  border: 1px solid #dcebf4;
+  border-radius: 6px;
+  background: #ebecf0;
+
+  margin-left: 20px;
+
+}
+
+.card__list--cards {
+  width: 100%;
+  padding: 0.6rem 0.8rem 0 0.8rem;
+
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.card__list--cards::-webkit-scrollbar {
+  width: 3px;
+  margin-left: 10px;
+  background: #ddd;
+}
+
+.card__list--cards::-webkit-scrollbar-thumb {
+  background: #5f4c4c;
+  border-radius: 3px;
+}
+
+.lists__card {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  height: calc(100% - 80px);
+}
+
+.lists__card::-webkit-scrollbar {
+  width: 3px;
+  margin-left: 10px;
+  background: #ddd;
+}
+
+.lists__card::-webkit-scrollbar-thumb {
+  background: #999797;
+  border-radius: 3px;
+}
+
+.card-container {
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.card-body {
+  padding: 0.8rem 0.8rem;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+.card__list--title {
+  font-size: 14px;
+  color: #172b4d;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 0.8rem 0.8rem 0 0.8rem;
+}
+
+
+.drag_start {
+  background: white;
+  width: 100%;
+  height: auto;
+}
+
+[draggable="true"] {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.card__list--footer {
+  display: block;
+  width: 100%;
+
+  padding: 5px 18px;
+}
+
+.symbol__plus {
+  width: 11px;
+  height: 11px;
+  fill: #5e6c84;
+}
+
+.add__card {
+  color: #5e6c84;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.card__add--textarea {
+  width: 100%;
+  border-radius: 3px;
+  background: white;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+
+  max-height: 80px;
+  height: 80px;
+  resize: none;
+}
+
+.btn__add--card {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.card__add--btn {
+  background-color: #5aac44;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px 9px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.action__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.symbol__close--cardAdd {
+  width: 12px;
+  height: 12px;
+  fill: #091e42;
+
+  cursor: pointer;
+}
+
+.card__textarea {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.card-list-container--add {
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 32px;
+  background-color: rgba(255, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 16%;
+  max-width: 16%;
+  padding: 0 9px;
+  flex: 0 0 16%;
+
+  margin-left: 20px;
+}
+
+.card__list--addList {
+  background: 0;
+  border: 0;
+  outline: 0;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 9px;
+
+  &:focus {
+    outline: 0;
+  }
+}

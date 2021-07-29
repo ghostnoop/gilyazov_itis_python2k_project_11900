@@ -1,0 +1,39 @@
+image: atnartur/docker:latest
+
+stages:
+  - build
+  - push
+  - deploy
+
+before_script:
+  - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+docker-build:
+  stage: build
+  script:
+    - docker-compose -f docker-compose.prod.yml build
+  tags:
+    - python2k
+  only:
+    - develop
+
+push:
+  stage: push
+  script:
+    - docker-compose -f docker-compose.prod.yml push app nginx
+  tags:
+    - python2k
+  only:
+    - develop
+
+run:
+  stage: deploy
+  script:
+    - docker-compose -f docker-compose.prod.yml pull
+    - docker-compose -f docker-compose.prod.yml stop
+    - docker-compose -f docker-compose.prod.yml rm -f
+    - docker-compose -f docker-compose.prod.yml up -d
+  tags:
+    - python2k
+  only:
+    - develop

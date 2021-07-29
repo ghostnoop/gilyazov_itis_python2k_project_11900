@@ -1,0 +1,28 @@
+.notfound__content {
+  width: 100%;
+  max-width: 968px;
+  padding: 2rem;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound__info {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.notfound__title {
+  font-size: 34px;
+  text-align: center;
+  color: #091e42;
+}
+
+.notfound__subtitle {
+  font-size: 23px;
+  color: black;
+  text-align: center;
+}

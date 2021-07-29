@@ -1,0 +1,128 @@
+//Home
+.header_home {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.header__home--inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.home_page {
+  max-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, #fff, #eae6ff 100%);
+}
+
+.home__logo {
+  display: flex;
+  align-items: center;
+}
+
+.symbol__trello {
+  fill: black;
+  width: 30px;
+  height: 30px;
+
+  margin-right: 5px;
+}
+
+.logo__name {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.home_nav {
+  display: flex;
+  align-items: center;
+}
+
+.home__login--link {
+  color: #0065ff;
+  text-decoration: none;
+  padding: .25rem .5rem;
+  font-size: 1.09375rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  margin-right: 10px;
+
+  &:hover {
+    text-decoration: none;
+    color: #0065ff;
+  }
+}
+
+.home__registration--link {
+  background: #0065ff;
+  color: white;
+  padding: .25rem .5rem;
+  border-radius: 0.2rem;
+  font-size: 1.09rem;
+  text-decoration: none;
+
+}
+
+.home__content {
+  padding-top: 3rem;
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.home__info {
+  width: 50%;
+}
+
+.home__info--title {
+  font-size: 3rem;
+  line-height: 1.05;
+  color: #091e42;
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+.home__info--subtext {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #091e42;
+
+  margin-bottom: 25px;
+}
+
+.home__lets--go {
+  padding: 8px 25px;
+  color: white;
+  background: #0065ff;
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.home__picture {
+  width: 35%;
+  display: flex;
+  margin-right: -8%;
+  margin-left: 8%;
+  justify-content: center;
+}
+
+.home__img {
+  max-width: 100%;
+  height: auto;
+}
